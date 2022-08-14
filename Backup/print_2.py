@@ -6,6 +6,7 @@ class ECC:
         self.age = age
         self.gender = gender
 
+
 def hello_world(name):
     print("Hello %s, welcome to the python World!" % (name))
 
@@ -19,7 +20,6 @@ def main():
 
     hello_world(Junyu.name)
 
+
 if __name__ == "__main__":
     main()
-
-

@@ -7,7 +7,7 @@ Pokemon Fight Game by Jocelyn, Anita, Joshua, Junyu, Lily
 import random
 import time
 
-# a class to create Pokemon heros 
+# a class to create Pokemon heros
 class Pokemon:
 
     def __init__(self, name, health, level, power, magic, energy):
@@ -25,7 +25,7 @@ class Pokemon:
             'Level': self.level,
             'Power': self.power,
             'Magic': self.magic,
-            'Energy': self.energy 
+            'Energy': self.energy
         }
 
         for key, value in pokemon_dic.items():
@@ -34,15 +34,16 @@ class Pokemon:
         print()
 
     def attack(self):
-        return random.randint(1,10)
+        return random.randint(1, 10)
 
     def rps(self):
         rps_list = ["Rock", "Paper", "Scissors"]
 
         return random.choice(rps_list)
 
+
 def stadium(pokemon_1, pokemon_2):
-    if pokemon_1.health > 0 and pokemon_2.health >0:
+    if pokemon_1.health > 0 and pokemon_2.health > 0:
         print("Action, start to fight ~")
 
         while True:
@@ -71,14 +72,14 @@ def stadium(pokemon_1, pokemon_2):
 
             time.sleep(0.5)
 
-def race_game(p1,p2, r):
+
+def race_game(p1, p2, r):
     p1_movelist = []
 
     for x in range(r):
         p1_movelist.append(random.randint(1, 10))
 
-    #print(p1_movelist)
-
+    # print(p1_movelist)
 
     print("|", end="")
 
@@ -95,11 +96,9 @@ def race_game(p1,p2, r):
     for x in range(r):
         p2_movelist.append(random.randint(1, 10))
 
-    #print(p2_movelist)
-
+    # print(p2_movelist)
 
     print("|", end="")
-
 
     for x in range(r):
         time.sleep(0.5)
@@ -109,13 +108,13 @@ def race_game(p1,p2, r):
 
     print(p2.name[0].capitalize() + "(" + str(sum(p2_movelist)) + ")")
 
-
     if sum(p1_movelist) > sum(p2_movelist):
         print("Ditto wins this racing game")
     elif sum(p1_movelist) < sum(p2_movelist):
         print("Eevee wins this racing game")
     else:
         print("Finally, it is a tie. ")
+
 
 def main():
     eevee = Pokemon("eevee", 100, 5, 10, 8, 15)
@@ -141,7 +140,7 @@ def main():
             ditto.display()
 
         elif choice == "2":
-            #print("fight")
+            # print("fight")
             #stadium(eevee, ditto)
 
             while True:
@@ -149,7 +148,7 @@ def main():
                 rps_2 = ditto.rps()
 
                 if rps_1 == rps_2:
-                    print("It is a tie") 
+                    print("It is a tie")
                     continue
                 elif rps_1 == "Rock":
                     if rps_2 == "Paper":
@@ -174,10 +173,10 @@ def main():
                         break
                 else:
                     print("No fight ~ ")
-                
+
         elif choice == "3":
-            race_game(ditto,eevee, 10)
-        
+            race_game(ditto, eevee, 10)
+
         elif choice == "4":
             print("See you ~")
             choice = False
@@ -185,10 +184,12 @@ def main():
         else:
             print("Not valid choice.")
 
+
 main()
-            
+
 if __name__ == "__main__":
     main()
-        
+
+
 def aprint():
     print("")
