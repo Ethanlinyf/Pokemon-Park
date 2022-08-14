@@ -14,19 +14,32 @@ class Pokemon:
     def welcome(self):
         print("Welcome to this Pokemon World!")
 
-    def create_random_list(self, number):
-        mylist = []
+    def findTheSmallOne(self, aList):
+        theSmallOne = 100
 
-        for i in range(number):
-            mylist.append(random.randint(0, 100))
+        for i in aList:
+            if i < theSmallOne:
+                theSmallOne = i
 
-        print(mylist)
+        print(theSmallOne)
+
+
+def create_random_list(n):
+    myList = []
+
+    for i in range(n):
+        myList.append(random.randint(1, 100))
+
+    print(myList)
+    return myList
 
 def main():
     ditto = Pokemon("Ditto", 6, 5, 100, 50, 20)
     ditto.welcome()
 
-    ditto.create_random_list(5)
+    aList = create_random_list(100)
+    ditto.findTheSmallOne(aList)
+
 
 if __name__ == "__main__":
     main()

@@ -1,9 +1,13 @@
+'''
+Create a list with 10 numbers
+
+'''
 
 import random
 
-mylist = []
+myList = []
 
-for i in range(10):
-    mylist.append(random.randint(0, 100))
+for x in range(10):
+    myList.append(random.randint(1, 100))
 
-print(mylist)
+print(myList)
