@@ -8,6 +8,8 @@ import random
 import time
 
 # a class to create Pokemon heros
+
+
 class Pokemon:
 
     def __init__(self, name, health, level, power, magic, energy):
@@ -185,11 +187,7 @@ def main():
             print("Not valid choice.")
 
 
-main()
-
 if __name__ == "__main__":
     main()
 
 
-def aprint():
-    print("")

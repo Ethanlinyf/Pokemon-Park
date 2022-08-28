@@ -1,8 +1,9 @@
 # Random for create a random number
 import random
 
-# a class for creating Pokemon heros
+
 class Pokemon:
+
     def __init__(self, name, age, level, health, power, magic):
         self.name = name
         self.age = age
@@ -12,33 +13,45 @@ class Pokemon:
         self.magic = magic
 
     def welcome(self):
-        print("Welcome to this Pokemon World!")
+        print("Welcome, %s to this Pokemon World!" % self.name)
 
-    def findTheSmallOne(self, aList):
-        theSmallOne = 100
+    def find_the_small_one(self, a_list):
+        the_small_one = 100
+        for i in a_list:
+            if i < the_small_one:
+                the_small_one = i
+        print("Well done, %s the smallest one is" % self.name, the_small_one)
 
-        for i in aList:
-            if i < theSmallOne:
-                theSmallOne = i
+    def find_the_biggest_one(self, a_list):
+        the_biggist = 0
 
-        print(theSmallOne)
+        for i in a_list:
+            if i > the_biggist:
+                the_biggist = i
+        
+        print("The biggist one is ", the_biggist)
 
+def statium(pokemon_1, pokemon_2):
+    pass
 
 def create_random_list(n):
-    myList = []
+    my_list = []
 
     for i in range(n):
-        myList.append(random.randint(1, 100))
+        my_list.append(random.randint(1, 100))
 
-    print(myList)
-    return myList
+    print(my_list)
+    return my_list
+
 
 def main():
     ditto = Pokemon("Ditto", 6, 5, 100, 50, 20)
     ditto.welcome()
 
-    aList = create_random_list(100)
-    ditto.findTheSmallOne(aList)
+    a_list = create_random_list(100)
+    ditto.find_the_small_one(a_list)
+    ditto.find_the_biggest_one(a_list)
+
 
 
 if __name__ == "__main__":
