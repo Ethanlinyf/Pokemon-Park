@@ -1,6 +1,6 @@
 # Pokemon Park
 ## Introduction
-Thhs park is created by Joshua, Junhao, Junyu, Jason and Colin
+This park is created by Jocelyn, Colin, Joshua, Junhao, Junyu, Jason, , Anita
 
 git config --global user.name 
 git config --global user.email 
