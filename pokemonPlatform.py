@@ -38,7 +38,7 @@ def statium(pokemon_1, pokemon_2):
     pass
 
 
-def createRandomList(n):
+def create_random_list(n):
     my_list = []
 
     for i in range(n):
@@ -46,7 +46,6 @@ def createRandomList(n):
 
     print(my_list)
     return my_list
-
 
 def main():
     ditto = Pokemon("Ditto", 6, 5, 100, 50, 20)
@@ -59,3 +58,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# main()
