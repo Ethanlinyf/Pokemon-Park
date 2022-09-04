@@ -26,7 +26,7 @@ The algorithm needs one whole pass without any swap to know it is sorted.
 How to end this looping
 - Demonstrate in a figure as follows:
 
-![sorting](bubble-sort1%20(1).png)
+![sorting](bubble-sort.png)
 
 Follow the below steps to solve the problem:
 

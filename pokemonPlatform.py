@@ -47,6 +47,7 @@ def create_random_list(n):
     print(my_list)
     return my_list
 
+
 def main():
     ditto = Pokemon("Ditto", 6, 5, 100, 50, 20)
     ditto.welcome()
@@ -58,4 +59,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
