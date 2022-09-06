@@ -3,7 +3,7 @@ Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping 
 
 ## How does Bubble Sort Work?
 - First Pass: 
-Bubble sort starts with very first two elements, comparing them to check which one is greater.
+Bubble sort starts with first two elements, comparing them to check which one is greater.
 ( **5 1** 4 2 8 ) –> ( **1 5** 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 > 1. 
 ( 1 **5 4** 2 8 ) –>  ( 1 **4 5** 2 8 ), Swap since 5 > 4 
 ( 1 4 **5 2** 8 ) –>  ( 1 4 **2 5** 8 ), Swap since 5 > 2 
@@ -59,7 +59,7 @@ if __name__ == "__main__":
  
   print("Sorted array is:")
   for i in range(len(arr)):
-      print("%d" % arr[i], end=" ")
+      print("%d" % arr[i], end="")
 
 ```
 
