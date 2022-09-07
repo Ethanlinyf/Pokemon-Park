@@ -1,0 +1,25 @@
+
+* Hero attributes:
+** basic
+- name 
+- age <--> evolution
+- classes: fire water, grass
+** Level
+- level: areas 
+** Atributes
+- agility <--> *power* /speed
+- strenght <--> health
+- intelligence <--> magic 
+** others
+- armor
+
+
+
+* story
+- different classes make the attacks be affected.
+- pause
+- attack back
+- One attack, the other could use magic for the other one or this one next run
+
+** fighting: one fight, the other use magic, each has three opportunities in each fighting.
+- triggering conditions. 

@@ -1,10 +1,9 @@
-'''
+"""
 Something Good as Indicated by ...
-
 0. import a template
-1. create a pokemon class
-2. create a menue
-'''
+1. create a Pokemon class
+2. create a menu
+"""
 
 import random
 import time
@@ -13,7 +12,7 @@ import math
 
 
 class Pokemon:
-    def __init__(self, name, age, health, level, power, magic):
+    def __init__(self, name, age, health, level, power, magic): # agility, intelligence, strength, armor
         self.name = name
         self.age = age
         self.health = health

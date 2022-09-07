@@ -1,7 +1,6 @@
-'''
+"""
 Something Good as Indicated by Joshua, Junhao, Junyu, Jason and Colin
-
-'''
+"""
 import random
 
 
