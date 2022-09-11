@@ -1,17 +1,15 @@
-"""
-Something Good as Indicated by ...
-0. import a template
-1. create a Pokemon class
-2. create a menu
-"""
+'''
+Something Good as Indicated by Joshua, Junhao, Junyu, Jason and Colin
 
-import random
-import time
-from matplotlib import pyplot as plt
-import math
+'''
+
+
+def welcome_message():
+    print("Welcome to this Pokemon Platform with sorting algorithm")
 
 
 class Pokemon:
+
     def __init__(self, name, age, health, level, power, magic):
         self.name = name
         self.age = age
@@ -19,20 +17,6 @@ class Pokemon:
         self.level = level
         self.power = power
         self.magic = magic
-
-    def display(self):
-        pokemon_dic = {
-            'Name': self.name,
-            'Age': self.age,
-            'Health': self.health,
-            'Level': self.level,
-            'Power': self.power,
-            'Magic': self.magic,
-        }
-
-
-def welcome_message():
-    print("Welcome to this Pokemon-Park")
 
 
 def race_game(p1, p2, r):
@@ -80,36 +64,8 @@ def race_game(p1, p2, r):
     return sum(p1_movelist) - sum(p2_movelist)
 
 
-def babble_sorting(arr):
-    lenth = len(arr)
-
-    for i in range(lenth):
-        for j in range(0, lenth-i-1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-
-    return arr
-
-
 def main():
     welcome_message()
-    eevee = Pokemon("Eevee", 8, 100, 8, 20, 5)
-    ditto = Pokemon("Ditto", 6, 100, 9, 18, 3)
-
-    competition = []
-
-    for i in range(10):
-        competition.append(race_game(eevee, ditto, 10))
-
-    print(competition)
-    results = babble_sorting(competition)
-
-    print(results)
-    plt.bar(range(10), results)
-    plt.show()
-
-    print("Eevee wins the most, ", results[9])
-    print("Ditto wins the most, ", abs(results[0]))
 
 
 if __name__ == "__main__":

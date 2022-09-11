@@ -1,6 +1,7 @@
-"""
+'''
 Something Good as Indicated by Joshua, Junhao, Junyu, Jason and Colin
-"""
+
+'''
 import random
 
 
@@ -18,26 +19,24 @@ def create_a_random_list(n):
 
 
 def swap(arr, i, j):
-    # the following implement how to swap two elements:
-    # arr[i], arr[j] = arr[j], arr[i]
     temp = arr[i]
     arr[i] = arr[j]
     arr[j] = temp
 
 
-def bubble_sorting_while(arr):
+def bubble_sorting(arr):
     n = len(arr)
 
     while n > 1:
         i = 1
-
+    
         while i < n:
             if arr[i] < arr[i-1]:
                 swap(arr, i, i-1)
             i += 1
 
         n -= 1
-
+    
     return arr
 
 
@@ -45,10 +44,8 @@ def main():
     welcome_message()
 
     arr = create_a_random_list(10)
-    print(arr)
 
-    sorted_arr = bubble_sorting_while(arr)
-    print(sorted_arr)
+    print(bubble_sorting(arr))
 
 
 if __name__ == "__main__":
