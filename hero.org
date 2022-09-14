@@ -2,8 +2,8 @@
 * Hero attributes:
 ** basic
 - name 
-- age <--> evolution
-- classes: fire water, grass
+- age <--> evolution ()
+- classes: fire, water, grass
 ** Level
 - level: areas 
 ** Atributes

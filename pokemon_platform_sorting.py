@@ -2,6 +2,7 @@
 Something Good as Indicated by Joshua, Junhao, Junyu, Jason and Colin
 
 '''
+import random
 
 
 def welcome_message():
@@ -64,8 +65,46 @@ def race_game(p1, p2, r):
     return sum(p1_movelist) - sum(p2_movelist)
 
 
+def swap(arr, i, j):
+    temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+
+
+def bubble_sorting(arr):
+    n = len(arr)
+
+    while n > 1:
+        i = 1
+    
+        while i < n:
+            if arr[i] < arr[i-1]:
+                swap(arr, i, i-1)
+            i += 1
+
+        n -= 1
+    
+    return arr
+
+
 def main():
     welcome_message()
+
+    eevee = Pokemon("Eevee", 8, 100, 6, 20, 10)
+    ditto = Pokemon("Ditto", 6, 100, 12, 15, 12)
+
+    # race_game(eevee, ditto, 10)
+
+    race_results = []
+
+    for i in range(7):
+        race_results.append(race_game(eevee, ditto, 10))
+
+    print(race_results)
+
+    race_results_sorted = bubble_sorting(race_results)
+
+    print(race_results_sorted)
 
 
 if __name__ == "__main__":
