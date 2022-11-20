@@ -1,7 +1,7 @@
-'''
+"""
 Something Good as Indicated by Joshua, Junhao, Junyu, Jason and Colin
 
-'''
+"""
 import random
 
 
@@ -45,8 +45,11 @@ def main():
 
     arr = create_a_random_list(10)
 
+    print(arr)
+
     print(bubble_sorting(arr))
 
 
 if __name__ == "__main__":
     main()
+

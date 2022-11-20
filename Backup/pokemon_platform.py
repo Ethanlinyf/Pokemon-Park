@@ -74,6 +74,8 @@ def stadium(pokemon_1, pokemon_2):
 
             time.sleep(0.5)
 
+def maze_battle():
+    pass
 
 def race_game(p1, p2, r):
     p1_movelist = []

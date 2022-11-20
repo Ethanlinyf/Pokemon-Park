@@ -23,3 +23,4 @@
 
 ** fighting: one fight, the other use magic, each has three opportunities in each fighting.
 - triggering conditions. 
+* 
