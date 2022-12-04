@@ -12,8 +12,8 @@
 - intelligence <--> magic 
 ** others
 - armor
-
-
+** Capacity Tree (5 to 8)
+** Abilities (x x x)
 
 * story
 - different classes make the attacks be affected.

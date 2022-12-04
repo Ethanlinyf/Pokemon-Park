@@ -1,9 +1,9 @@
-"""
+'''
 Something Good as Indicated by Junhao, Junyu, Jason, Colin
 
 Topic: Dictionary in Python
+'''
 
-"""
 
 class Pokemon:
     def __init__(self, name, age, typee, level, agility, strenght, intelligence):
@@ -40,6 +40,7 @@ def main():
     eevee = Pokemon("Eevee", 5, 'water', 2, 8, 9, 22)
 
     ditto.display()
+    print(ditto.test)
 
 
 if __name__ == "__main__":
