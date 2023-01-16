@@ -15,6 +15,14 @@ wn.setup(1000,800)
 myTurtle = turtle.Turtle()
 myTurtle.pensize(3)
 
+def fibo_seq(n):
+    fib = [0, 1]
+
+    for i in range(n): 
+        fib.append(fib[i] + fib[i+1])
+
+    return fib 
+
 def draw_square(side):
     for i in range(6):
         myTurtle.forward(side)
@@ -29,6 +37,7 @@ def sprial():
     # draw fibonacci spiral
     myTurtle.pendown()  
     myTurtle.pencolor("red")
+    
     arc(20, angle)                         
     arc(20, angle)                         
     arc(40, angle)                         
@@ -54,17 +63,13 @@ def arc(r, angle):
     myTurtle.right(step_angle/2)
 
 def main():
-    valueOne = 0
-    valueTwo = 1
-    fib = 1
+
     for i in range(8):                      
         myTurtle.right(90)                  
-        draw_square(fib*20)                  
-        fib = valueOne + valueTwo           
-        valueOne = valueTwo
-        valueTwo = fib
+        draw_square(fibo_seq(7)[i+1]*20)
+        
+    sprial()
+    wn.exitonclick()
 
 if __name__ == "__main__":
     main()
-    sprial()
-    wn.exitonclick()
