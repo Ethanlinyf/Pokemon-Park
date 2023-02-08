@@ -25,13 +25,13 @@ class Pokemon:
 
         for key, value in pokemon_dic.items():
             print(key, ' : ', value)
-        
+
 
 
 def welcome_message():
     print("Welcome to Pokemon Park!")
 
-    
+
 def main():
     welcome_message()
 

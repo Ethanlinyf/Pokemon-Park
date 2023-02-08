@@ -16,3 +16,7 @@ ssh-keygen -t rsa -C
     3. create a random list
     4. sort a random list
 
+
+Add linter: https://code.visualstudio.com/docs/python/linting#_message-category-mapping
+
+/Users/ethanlin/miniconda3/bin/python -m pip install -U pycodestyle 

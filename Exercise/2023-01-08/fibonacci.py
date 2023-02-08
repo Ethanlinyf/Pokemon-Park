@@ -7,6 +7,7 @@ To create a Fibonacci Sequence
 
 def welcome_message():
 	print("Welcom to this Python program")
+    
 
 def fibo_seq(n):
 	fib = [0, 1]
@@ -21,6 +22,7 @@ def fibo_seq(n):
 
 		return fib
 
+
 def main():
 	welcome_message()
 
@@ -28,8 +30,8 @@ def main():
 
 	print(fibo_seq(n))
 
+
 if __name__ == "__main__":
 	main()
 
-
-
+main()
