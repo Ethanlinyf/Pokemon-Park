@@ -1,0 +1,67 @@
+* Pokemon Park
+The last piece of puzzle is class inheritance.
+
+Hero has different types.
+
+a cup product has several attributes:
+- name
+- price
+- description
+- size
+- shape
+- material
+- made from 
+
+- specific functions:
+  + handle
+
+  + keep warm
+
+  + healthy 
+
+
+** Inheritance in Pokemon Park
+- hero
+- Ditto
+  Eevee: name, age, size, magic, power, health
+
+  The capacities: display themselves, attack. run,
+  random number, fire, grass, water. 
+
+
+in which area, this basic hero can perform the actions, such as
+Stadium.
+
+in a science building: to deal with Fibonacci sequences.
+- generate a Fibonacci sequence
+- draw
+- generate a golden ratio list.
+- display the golden ration list in a graphic interface. 
+
+
+0 --> 1 --> one more --> again -- one more
+
+define a basic class, then inherit from this class to create different
+hero and them let them perform in different areas.
+
+
+Area: a science building, what we need, two Pokemon heroes: Feabo,
+Renera.
+
+define a function generate a Fibonacci sequence:
+#+begin_src python
+  def generate_fib_by_hero(phero):
+    fib = phero.generate_fibonacci_sequence()
+
+    return fib
+#+end_src
+
+
+An inherited class can do what:
+- rewrite: attributes
+- create new attributes
+- rewrite functions
+- create new functions
+- reuse the super attributes
+- reuse the super functions
+

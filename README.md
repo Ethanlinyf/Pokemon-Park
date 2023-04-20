@@ -1,6 +1,8 @@
 # Pokemon Park
 ## Introduction
-This park is created by Jocelyn, Colin, Joshua, Junhao, Junyu, Jason, , Anita, Mia
+This park is created by Jocelyn, Colin, Joshua, Junhao, Junyu, Jason, , Anita, Mia. We are using this park to perform python practice. 
+
+In this Pokemon park, we have some modules that can be used to create different python practices. 
 
 ## Settings in the git and github
 - git config --global user.name

@@ -1,0 +1,6 @@
+(undo-tree-save-format-version . 1)
+"28dd69c716d302393de4ca6b4eb676f31803f64e"
+[nil nil nil nil (25629 976 706649 0) 0 nil]
+([nil nil ((nil rear-nonsticky nil 609 . 610) (nil fontified nil 1 . 610) (1 . 610) (t 25629 970 421538 782000)) nil (25629 976 706648 0) 0 nil])
+([nil current ((610 . 611)) nil (25629 976 706644 0) 0 nil])
+nil

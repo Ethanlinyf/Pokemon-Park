@@ -1,0 +1,5 @@
+def generate_fib_by_hero(phero):
+  fib = phero.generate_fibonacci_sequence()
+
+  return fib
+
